@@ -1,1 +1,181 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aaron Jefferson | Portfolio</title>
 
+        <!--Import tailwind script-->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+        <!--Custom tailwind config-->
+        <script src="assets/scripts/tailwind-config.js"></script>
+
+        <!--Animations-->
+        <link rel="stylesheet" href="assets/css/m3.css" type="text/css">
+    </head>
+    <body class="bg-background text-on-background antialiased">
+
+        <!--Header and navigation-->
+        <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="main-header">
+            <nav class="container mx-auto px-4 lg:px-6">
+                <div class="flex justify-between items-center py-3">
+                    <!--Avatar logo-->
+                    <a class="flex items-center gap-2" href="#">
+                        <img src="assets/pics/logo.jpg" alt="Aaron Jefferson" class="h-8 w-auto rounded-md">
+                        <span class="text-xl font-semibold text-on-surface">Aaron Jefferson | Portfolio</span>
+                    </a>
+
+                    <!--Mobile menu button-->
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-full text-on-surface-varient hover:bg-primary/10 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+
+                    <!--Desktop navigation-->
+                    <div class="hidden lg:flex lg:items-center lg:space-x-2 bg-primary-container/50 backdrop-blur-sm px-4 py-2 rounded-full">
+                        <a href="#about" class="px-3 py-2 text-on-primary-container hover:text-primary transition-colors rounded-full hover:bg-primary/10">About Me</a>
+                        <a href="#projects" class="px-3 py-2 text-on-primary-container hover:text-primary transition-colors rounded-full hover:bg-primary/10">Projects</a>
+                        <a href="#experience" class="px-3 py-2 text-on-primary-container hover:text-primary transition-colors rounded-full hover:bg-primary/10">Experience</a>
+                        <a href="#qualifications" class="px-3 py-2 text-on-primary-container hover:text-primary transition-colors rounded-full hover:bg-primary/10">Qualifications</a>
+                        <a href="#contact" class="px-3 py-2 text-on-primary-container hover:text-primary transition-colors rounded-full hover:bg-primary/10">Contact Me</a>
+                    </div>
+                </div>
+
+                <!--Mobile navigation menu-->
+                <div id="mobile-menu" class="hidden lg:hidden pb-4 space-y-2 bg-primary-container rounded-2xl mt-2 p-2">
+                    <a href="#about" class="block px-3 py-2 rounded-xl text-on-surface-varient hover:bg-primary/10 hover:text-primary">About Me</a>
+                    <a href="#projects" class="block px-3 py-2 rounded-xl text-on-surface-varient hover:bg-primary/10 hover:text-primary">Projects</a>
+                    <a href="#experience" class="block px-3 py-2 rounded-xl text-on-surface-varient hover:bg-primary/10 hover:text-primary">Experience</a>
+                    <a href="#qualifications" class="block px-3 py-2 rounded-xl text-on-surface-varient hover:bg-primary/10 hover:text-primary">Qualifications</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-xl text-on-surface-varient hover:bg-primary/10 hover:text-primary">Contact Me</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--Hero section-->
+            <section class="relative h-screen flex items-center justify-center text-center text-white p-4 overflow-hidden">
+                <div class="absolute inset-0 bg-black/60 z-10"></div>
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://thehighlandcafe.github.io/hioswebcore/mobile-sites/hienterprises/pics/backdrop.jpg');"></div>
+                <div class="relative z-20 space-y-2">
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight opacity-0 animate-fade-in" style="animation: fade-in 1s ease-out 0.2s forwards;">
+                        <span class="block">Aaron Jefferson's</span>
+                        <span class="block text-primary">Portfolio</span>
+                    </h1>
+                </div>
+                <style>
+                    @keyframes fade-in { to { opacity: 1; transform: translateY(0); } }
+                    .animate-fade-in { opacity: 0; transform: translateY(10px); }
+                </style>
+            </section>
+
+            <!--About section-->
+            <section class="py-16 sm:py-20 animate-on-scroll" id="about">
+                <div class="container mx-auto px-4 lg:px-6">
+                    <div class="text-left">
+                        <h2 class="text-3xl font-bold tracking-tight text-on-surface sm:text-4xl">About Me</h2>
+                        <p class="mt-3 text-lg text-on-surface-varient">
+                            Hello! My name is Aaron Jefferson, and I am currently a second-year student at the University of Dundee, studying BSc Computer Science with Industrial Placement.
+                            My skills specialise in Front-end Web development, Android App development, and UI/UX development, though I'm also a product design and marketing enthusiast, and I've also got a keen interest in politics and history.<br><br>
+                            Ever since I was very young, I have been facinated by computers, and how they and apps work. Right through secondary school, whether it was in Computing class, or in my own free time, I would be building user-friendly apps to solve specific problems, or to teach myself new skills.<br><br>
+                            For example, in 2021, I taught myself HTML and CSS development by building a hotel booking and restaurant ordering app for a hypothetical hotel/restaurant business, and progressed those skills to build an Android, Windows (both C# WinForms and WinUI), and web app, incorporating Javascript along the way.<br>
+                            Earlier this year, in an attempt to teach myself Dart and Flutter development, I re-wrote, from scratch, the original Android WebView app into a native Flutter application, which could run on Android, Web, MacOS, and Windows, from a single codebase.<br><br>
+                            I am also in the process of learning Tailwind JS for web development. I also learned Java in first year, and I am now in the process of learning C and C++ in second year at university.<br><br>
+                            Furthermore, I am also very much into nature and wildlife photography, and vinyl record collection.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Projects section-->
+            <section class="py-12 sm:py-16 animate-on-scroll" id="projects">
+                <div class="container mx-auto px-4 lg:px-6">
+                    <div class="text-left">
+                        <h2 class="text-3xl font-bold tracking-tight text-on-surface sm:text-4xl">Projects</h2>
+                        <p class="mt-3 text-lg text-on-surface-varient">
+                        I've worked on many software development projects over the years. Here is a list of them, whether they are Professional, University, or Personal.
+                        </p>
+                        <h3 class="mt-8 text-xl font-semibold tracking-normal text-on-surface-varient sm:text-2xl">Professional Projects</h3>
+                    </div>
+
+                    <!--Professional projects-->
+                    <div class="mt-5 grid gap-8 sm:grid-cols-1 lg:grid-cols-2 animate-on-scroll">
+                        <!--Project card -->
+                        <div class="bg-surface-variant rounded-2xl shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300">
+                            <img class="w-full object-cover p-4 bg-white/90" src="assets/pics/projects/vets.png" alt="Glenn Vets website screenshot">
+                            <div class="p-6 text-left flex-grow flex flex-col">
+                                <h3 class="text-xl font-semibold text-on-surface-variant flex-grow">Glenn Vets website</h3>
+                                <p class="my-2 text-on-surface-variant/80">
+                                    Built as a project from Ivyhill Digital, Bangor, this was a project where I had a build a website for a vet clinic using the Wix website builder.<br><br>
+                                    From: August 2024
+                                </p>
+                                <a href="https://www.glennvetclinic.co.uk" class="text-center mt-4 inline-block w-full bg-primary text-on-primary px-4 py-2 rounded-full hover:opacity-80 transition-opacity font-semibold">Visit website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--University projects-->
+                    <div class="text-left">
+                        <h3 class="mt-8 text-xl font-semibold tracking-normal text-on-surface-varient sm:text-2xl">University Projects</h3>
+                    </div>
+
+                    <div class="mt-5 grid gap-8 sm:grid-cols-1 lg:grid-cols-2 animate-on-scroll">
+                        <!--Project card -->
+                        <div class="bg-surface-variant rounded-2xl shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300">
+                            <img class="w-full object-cover p-4 bg-white/90" src="assets/pics/projects/yapp.png" alt="Screenshot of Yapp program">
+                            <div class="p-6 text-left flex-grow flex flex-col">
+                                <h3 class="text-xl font-semibold text-on-surface-variant flex-grow">Yapp - social media app</h3>
+                                <p class="my-2 text-on-surface-variant/80">
+                                    A team project from first-year CS at university, Yapp was built in the Introduction to Data Structures and Algorithms module alongside three other team members, and is a binary tree-based Java social media program. My role was to build the GUI and the UI design. This team project was very successful, as we got a Band 1 A (highest grade) for the project.<br><br>
+                                    From: March 2025
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Project card -->
+                        <div class="bg-surface-variant rounded-2xl shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300">
+                            <img class="w-full object-cover p-4 bg-white/90" src="assets/pics/projects/firstgear.png" alt="FirstGear website screenshot">
+                            <div class="p-6 text-left flex-grow flex flex-col">
+                                <h3 class="text-xl font-semibold text-on-surface-variant flex-grow">FirstGear website</h3>
+                                <p class="my-2 text-on-surface-variant/80">
+                                    This car review website, FirstGear, was built in the Front-End Web Development module in first-year CS. Using bootstrap, it demonstrates the usage of all the main Boostrap components, and how they can be implemented on an HTML website.
+                                    From: March 2025
+                                </p>
+                                <a href="https://aarjay123.github.io" class="text-center mt-4 inline-block w-full bg-primary text-on-primary px-4 py-2 rounded-full hover:opacity-80 transition-opacity font-semibold">Visit website</a>
+                            </div>
+                        </div>
+
+                        <!--Project card -->
+                        <div class="bg-surface-variant rounded-2xl shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300">
+                            <img class="w-full object-cover p-4 bg-white/90" src="assets/pics/projects/scribble.png" alt="Screenshot of Scribble program">
+                            <div class="p-6 text-left flex-grow flex flex-col">
+                                <h3 class="text-xl font-semibold text-on-surface-variant flex-grow">Scribble - command prompt word game</h3>
+                                <p class="my-2 text-on-surface-variant/80">
+                                    A final project from first-year CS from the Introduction to Software Development module, Scribble, written in Java, is a command-prompt -based word game, which is very similar to Scrabble.<br><br>
+                                    From: December 2024
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            TODO: add personal projects, then qualifications, then contact info.
+        </main>
+
+        <!--Footer-->
+        <footer class="bg-surface-container py-12 mt-12">
+            <div class="container mx-auto px-4 lg:px-6 text-center text-outline">
+                <p>&copy; Aaron Jefferson, 2025</p>
+            </div>
+        </footer>
+
+        <script src="assets/scripts/app.js"></script>
+    </body>
+</html>
